@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+
+    <div class="container bg">
+        <div id="timer" class="time">Time: 120</div>
+        <div id="quizBox" class="box1 ">
+
+
+            <h3 id="qNumber"></h3>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+
+            <button id="prevBtn" onclick="prevQ()" class="btn-left">Previous</button>
+            <button id="nextBtn" onclick="nextQ()" class="btn-right">Next</button>
+            <button id="submitBtn" onclick="submitQuiz()" style="display:none;" class="btn-right">Submit</button>
+
+
+        </div>
+       
+            <div id="result" class="resul-box"></div>
+
+        
+
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
