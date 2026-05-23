@@ -13,6 +13,10 @@ function register() {
     alert("Fill all fields");
     return;
   }
+  if (password.length < 6) {
+    alert("Password must contain minimum 6 characters");
+    return;
+  }
 
   // confirm password check
   if (password !== confirmPassword) {
@@ -20,7 +24,7 @@ function register() {
     return;
   }
 
-  let users = JSON.parse(localStorage.getItem("users")) || []; //“users data இருந்தா load பண்ணு, இல்லனா empty list use பண்ணு”
+  let users = JSON.parse(localStorage.getItem("users")) || [];
   // username check
   let userExists = users.find(function (u) {
     return u.username === username;
@@ -98,7 +102,7 @@ let quizQ = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
 console.log(quizQ);
 
 let index = 0;
-let answers = new Array(10).fill(null); 
+let answers = new Array(10).fill(null);
 // loadQ();
 
 
@@ -207,17 +211,28 @@ function submitQuiz() {
   document.getElementById("result").innerHTML = resultHTML;
   // document.getElementById("registerDiv").style.display = "none";
   // document.getElementById("loginDiv").style.display = "none";
-  setTimeout(() => {
-    window.location.href = "index.html";
-  }, 3000);
+ 
 }
 window.onload = function () {
 
-  if(document.getElementById("question")){
+  if (document.getElementById("question")) {
 
-      loadQ();
-      startTimer();
+    loadQ();
+    startTimer();
 
   }
 
 };
+// window.onload = function () { 
+//   if (window.location.pathname.includes("quiz.html") && localStorage.getItem("isLogin") !== "true") {
+//     window.location.href = "login.html";
+//      return;
+//   } if (document.getElementById("question")) {
+//     loadQ();
+//      startTimer();
+//   }
+// };
+function logout() {
+  localStorage.removeItem("isLogin");
+  window.location.href = "login.html";
+}

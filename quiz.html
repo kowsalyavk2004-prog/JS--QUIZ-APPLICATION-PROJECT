@@ -7,12 +7,20 @@
     <title>Quiz App</title>
 </head>
 <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
 
 
     <div class="container bg">
+        <div class="logout-box">
+         
+            <button onclick="logout()" class="logout-btn">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+
+        </div>
+
         <div id="timer" class="time">Time: 120</div>
+
         <div id="quizBox" class="box1 ">
 
 
@@ -21,15 +29,18 @@
             <div id="options"></div>
 
             <button id="prevBtn" onclick="prevQ()" class="btn-left">Previous</button>
+
             <button id="nextBtn" onclick="nextQ()" class="btn-right">Next</button>
             <button id="submitBtn" onclick="submitQuiz()" style="display:none;" class="btn-right">Submit</button>
 
 
-        </div>
-       
-            <div id="result" class="resul-box"></div>
 
-        
+        </div>
+
+
+        <div id="result" class="resul-box"></div>
+
+
 
 
     </div>

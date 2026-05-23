@@ -10,14 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: grid;
-    place-items: center;
-    align-items: center; */
+
     height: 100vh;
     position: relative;
-    background-image: url("../img/6.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+
 
 
 }
@@ -31,12 +28,11 @@
     height: 540px;
     padding: 0 10px;
     position: absolute;
-    /* background-color: #0f191d1a; */
-    box-shadow: 0px 0px 6px 0px white;
-    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 6px 0px rgb(10, 7, 7);
+
     border-radius: 10px;
-    background-color: #1c383a36;
-    /* position: absolute; */
+    background: #111827;
+    color: white;
 
 }
 
@@ -46,12 +42,12 @@
     height: 400px;
     padding: 0 10px;
     position: absolute;
-    /* background-color: #0f191d1a; */
+
     box-shadow: 0px 0px 6px 0px black;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    background-color: #1c383a36;
-    /* position: absolute; */
+    background: #111827;
+    color: white;
 
 }
 
@@ -178,9 +174,9 @@ h2 {
     padding: 0 1%;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 0px #88a2a88e;
-
-    backdrop-filter: blur(20px);
+    background: #111827;
     color: white;
+
 }
 
 .box1 h3 {
@@ -196,15 +192,29 @@ h2 {
 }
 
 .bg {
-    
-    background-image: url("../img/12.avif");
+
+    /* background-image: url("../img/12.avif"); */
     background-repeat: no-repeat;
     background-size: cover;
     /* color: white; */
 }
 
+.redirect {
+    /* border: 1px solid blue; */
+    text-align: center;
+    padding: 10px 0;
+}
+
+a {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    font-size: 18px;
+}
+
 .bg-log {
-    background-image: url("../img/1.jpg");
+    /* background-image: url("../img/1.jpg"); */
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,21 +257,43 @@ h2 {
 input {
     padding: 10px;
     font-size: 17px;
+    color: white;
 
 }
 
+.logout-btn {
+    border: 1px solid;
+    font-size: 18px;
+    border: none;
+
+    width: 130px;
+    height: 46px;
+
+    background-color: #177a80;
+    border-radius: 5px;
+    color: white;
+}
+
+.logout-box {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.logout-btn:hover {
+    background: darkcyan;
+}
+
 @media all and (max-width:768px) {
-    .box {
+        .box {
         /* border: 1px solid; */
         width: 70%;
-        /* height: 80%; */
         padding: 0 10px;
-        /* position: absolute; */
-        /* background-color: #0f191d1a; */
-        box-shadow: 0px 0px 6px 0px white;
-        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 6px 0px rgb(10, 7, 7);
         border-radius: 10px;
-        background-color: #1c383a36;
+        background-color: #111827;
         /* position: absolute; */
     }
 
@@ -274,12 +306,13 @@ input {
     }
 
     .time {
-        margin-top: 10px;
+
         position: absolute;
-        width: 80px;
-        height: 80px;
-        top: 4px;
-        right: 20px;
+        width: 60px;
+        width: 60px;
+        height: 60px;
+        top: 30px;
+        /* right: 8px; */
         background: linear-gradient(45deg, #ff416c, #ff4b2b);
         color: white;
         padding: 24px 18px;
@@ -290,27 +323,33 @@ input {
 
     }
 
-    .btn-right {
-        border: 1px solid;
-        border: none;
-        position: relative;
-        top: 10%;
-        left: 50%;
-        padding: 2% 5%;
-        background-color: #177a80;
-        border-radius: 5px;
-    }
+   
+     .btn-right {
+    border: 1px solid;
+    border: none;
+    position: relative;
+    top: 10%;
+    left: 41%;
+    padding: 2% 5%;
+    background-color: #177a80;
+    border-radius: 5px;
+}
 
     .box1 {
         /* border: 1px solid red; */
-        width: 314px;
-        height: 350px;
+        width: 90%;
+        height: 400px;
         padding: 0 1%;
         border-radius: 10px;
         box-shadow: 0px 0px 6px 0px #88a2a88e;
         /* background-color: #223a3aa8; */
         backdrop-filter: blur(20px);
         color: white;
+
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
     }
 
     #options label {
@@ -322,4 +361,56 @@ input {
         width: 100%;
 
     }
+
+    .logout-btn {
+        border: 1px solid;
+        font-size: 15px;
+        border: none;
+        width: 100%;
+        height: 35px;
+        background-color: #177a80;
+        border-radius: 5px;
+        color: white;
+        padding: 3px;
+    }
+
+    .logout-box {
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+
+
+    .container {
+        padding: 20px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .logout-box {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 10;
+    }
+
+    .logout-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .time {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        right: 30%;
+        font-size: 16px;
+        border-radius: 50%;
+    }
+
+
+
 }
