@@ -188,7 +188,7 @@ h2 {
 .resul-box {
     /* border: 1px solid red; */
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .bg {
@@ -287,7 +287,7 @@ input {
 }
 
 @media all and (max-width:768px) {
-        .box {
+    .box {
         /* border: 1px solid; */
         width: 70%;
         padding: 0 10px;
@@ -323,17 +323,17 @@ input {
 
     }
 
-   
-     .btn-right {
-    border: 1px solid;
-    border: none;
-    position: relative;
-    top: 10%;
-    left: 41%;
-    padding: 2% 5%;
-    background-color: #177a80;
-    border-radius: 5px;
-}
+
+    .btn-right {
+        border: 1px solid;
+        border: none;
+        position: relative;
+        top: 10%;
+        left: 41%;
+        padding: 2% 5%;
+        background-color: #177a80;
+        border-radius: 5px;
+    }
 
     .box1 {
         /* border: 1px solid red; */
@@ -403,8 +403,8 @@ input {
 
     .time {
         position: absolute;
-        width: 60px;
-        height: 60px;
+        width: 67px;
+        height: 68px;
         top: 0;
         right: 30%;
         font-size: 16px;
