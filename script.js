@@ -69,10 +69,18 @@ function login() {
     return x.username === u && x.password === p;
   });
 
+  if (u === "" || p === "") {
+    alert("Fill all fields");
+    return;
+  }
+
   if (valid) {
     alert("Login success");
     window.location.href = "quiz.html";
-  } else {
+
+  }
+
+  else {
     alert("Invalid login");
   }
 
@@ -211,7 +219,7 @@ function submitQuiz() {
   document.getElementById("result").innerHTML = resultHTML;
   // document.getElementById("registerDiv").style.display = "none";
   // document.getElementById("loginDiv").style.display = "none";
- 
+
 }
 window.onload = function () {
 
